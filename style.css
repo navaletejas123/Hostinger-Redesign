@@ -1,0 +1,242 @@
+body {
+  font-family: Muli, sans-serif;
+}
+.navbar-brand {
+  font-family: Muli, sans-serif;
+  font-size: 20px;
+}
+.fs-21 {
+  font-size: 21px;
+}
+.fs-34 {
+  font-size: 34px;
+}
+.fs-34 {
+  font-size: 34px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-54 {
+  font-size: 50px;
+}
+.color-crimson {
+  color: crimson;
+}
+.bg-blue {
+  background-color: #673de6;
+}
+.color-blue {
+  color: #673de6;
+}
+.india-flag {
+  width: 2vw;
+}
+.login-btn {
+  border: 1px solid white;
+}
+.login-btn:hover {
+  background-color: #673de6 !important;
+  border: 1px solid white !important;
+}
+.p1 {
+  /* font-size: 46px;  */
+  font-size: 40px;
+  /* font-size: 2.9947916666666665vw; */
+  line-height: 50.6px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 0px 0px 22px;
+  padding: 0px;
+}
+.p2 {
+  font-size: 16px;
+  line-height: 22.4px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  padding: 0px;
+}
+.p3 {
+  line-height: 54px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+}
+.p4 {
+  font-size: 14px;
+  line-height: 15.4px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+}
+.p5 {
+  line-height: 40.8px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.p6 {
+  line-height: 21px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 20px 0px 0px;
+  padding: 0px;
+}
+.select-btn:hover {
+  background-color: #673de6 !important;
+}
+.offer-btn {
+  margin-bottom: 25px;
+  background-color: crimson;
+  font-weight: bold;
+}
+.bounce-btn {
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-iteration-count: infinite;
+  /* animation: glowing 1300ms infinite; */
+}
+
+@keyframes bounce {
+  to {
+    transform: translate3d(0, 15px, 0);
+  }
+}
+
+.myimg {
+  /* animation: zoom 10s infinite ; */
+  animation: zoomimg 10s linear infinite alternate-reverse;
+}
+@keyframes zoomimg {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.95, 0.95);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.myicon {
+  animation: myicon 2s ease infinite;
+}
+@keyframes myicon {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-2px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(2px);
+  }
+}
+
+.services-background {
+  background: linear-gradient(to right, #4d3796, #74abc9);
+  padding: 80px 0;
+}
+
+/* search */
+
+.contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+.input-group input {
+  text-align: center;
+  outline: none;
+  border: 1px solid lightgray;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 40vw;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
+  transition: 200ms ease-in-out;
+}
+.input-group input:focus {
+  outline: none;
+}
+.input-group input:focus ~ label {
+  top: 0px;
+  left: 15%;
+  background: #fff;
+  font-size: 14px;
+  color: blue;
+  padding: 0 5px;
+}
+.input-group input.valid ~ label {
+  top: 0px;
+  left: 15%;
+  background: #fff;
+  font-size: 14px;
+  color: blue;
+  padding: 0 5px;
+}
+.input-group input.valid {
+  border: 1px solid green !important;
+}
+.input-group input.invalid {
+  border: 1px solid red !important;
+}
+.input-group input.filled ~ label {
+  top: 0px;
+  left: 15%;
+  background: #fff;
+  font-size: 14px;
+  color: blue;
+  padding: 0 5px;
+}
+.input-group input.invalid ~ label {
+  top: 0px;
+  left: 15%;
+  background: #fff;
+  font-size: 14px;
+  color: blue;
+  padding: 0 5px;
+}
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-51%, -51%);
+  color: gray;
+  font-size: 18px;
+  pointer-events: none;
+  transition: 200ms ease-in-out;
+}
+
+@media only screen and (max-width: 904px) {
+  .input-group label {
+    transform: translate(-45%, -45%);
+  }
+}
+
+.bg-search{
+  background-color: #F4F5FF;
+}
+.footer{
+  background: linear-gradient(to right, rgb(131, 96, 195), rgb(46, 191, 145));
+}
